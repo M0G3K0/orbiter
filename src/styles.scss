@@ -1,1 +1,138 @@
-/* You can add global styles to this file, and also import other style files */
+/* ============================================
+ * Orbiter Design System - Global Styles
+ * "Orbit the core, deliver more."
+ * ============================================ */
+
+/* --- Tailwind CSS v4 with CSS Layers (spartan/ui recommended) --- */
+@layer theme, base, components, utilities;
+@import "tailwindcss/theme.css" layer(theme);
+@import "tailwindcss/preflight.css" layer(base);
+@import "tailwindcss/utilities.css";
+
+/* --- spartan/ui Preset (includes tw-animate-css & CDK overlay) --- */
+@import "@spartan-ng/brain/hlm-tailwind-preset.css";
+
+/* --- Orbiter Theme Variables (shadcn/spartan compatible) --- */
+:root {
+    color-scheme: light;
+    --font-sans: 'Inter', 'Geist Sans', system-ui, -apple-system, sans-serif;
+    --radius: 0.625rem;
+
+    /* Surface Colors */
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.145 0 0);
+    --card: oklch(1 0 0);
+    --card-foreground: oklch(0.145 0 0);
+    --popover: oklch(1 0 0);
+    --popover-foreground: oklch(0.145 0 0);
+
+    /* Brand Colors */
+    --primary: oklch(0.205 0 0);
+    --primary-foreground: oklch(0.985 0 0);
+    --secondary: oklch(0.97 0 0);
+    --secondary-foreground: oklch(0.205 0 0);
+
+    /* Utility Colors */
+    --muted: oklch(0.97 0 0);
+    --muted-foreground: oklch(0.556 0 0);
+    --accent: oklch(0.97 0 0);
+    --accent-foreground: oklch(0.205 0 0);
+    --destructive: oklch(0.577 0.245 27.325);
+
+    /* Border & Input */
+    --border: oklch(0.922 0 0);
+    --input: oklch(0.922 0 0);
+    --ring: oklch(0.708 0 0);
+
+    /* Sidebar */
+    --sidebar: oklch(0.985 0 0);
+    --sidebar-foreground: oklch(0.145 0 0);
+    --sidebar-primary: oklch(0.205 0 0);
+    --sidebar-primary-foreground: oklch(0.985 0 0);
+    --sidebar-accent: oklch(0.97 0 0);
+    --sidebar-accent-foreground: oklch(0.205 0 0);
+    --sidebar-border: oklch(0.922 0 0);
+    --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+    color-scheme: dark;
+
+    /* Surface Colors */
+    --background: oklch(0.145 0 0);
+    --foreground: oklch(0.985 0 0);
+    --card: oklch(0.205 0 0);
+    --card-foreground: oklch(0.985 0 0);
+    --popover: oklch(0.205 0 0);
+    --popover-foreground: oklch(0.985 0 0);
+
+    /* Brand Colors */
+    --primary: oklch(0.922 0 0);
+    --primary-foreground: oklch(0.205 0 0);
+    --secondary: oklch(0.269 0 0);
+    --secondary-foreground: oklch(0.985 0 0);
+
+    /* Utility Colors */
+    --muted: oklch(0.269 0 0);
+    --muted-foreground: oklch(0.708 0 0);
+    --accent: oklch(0.269 0 0);
+    --accent-foreground: oklch(0.985 0 0);
+    --destructive: oklch(0.704 0.191 22.216);
+
+    /* Border & Input */
+    --border: oklch(1 0 0 / 10%);
+    --input: oklch(1 0 0 / 15%);
+    --ring: oklch(0.556 0 0);
+
+    /* Sidebar */
+    --sidebar: oklch(0.205 0 0);
+    --sidebar-foreground: oklch(0.985 0 0);
+    --sidebar-primary: oklch(0.985 0 0);
+    --sidebar-primary-foreground: oklch(0.205 0 0);
+    --sidebar-accent: oklch(0.269 0 0);
+    --sidebar-accent-foreground: oklch(0.985 0 0);
+    --sidebar-border: oklch(1 0 0 / 10%);
+    --sidebar-ring: oklch(0.556 0 0);
+}
+
+/* ============================================
+ * Orbiter Custom Tokens
+ * 10x Scale Spacing System (from PTCQ learnings)
+ * ============================================ */
+@theme {
+    /* Spacing - 10x Scale */
+    --spacing-orb-00: 0;
+    --spacing-orb-05: 0.125rem;
+    /* 2px */
+    --spacing-orb-10: 0.25rem;
+    /* 4px */
+    --spacing-orb-15: 0.375rem;
+    /* 6px */
+    --spacing-orb-20: 0.5rem;
+    /* 8px */
+    --spacing-orb-30: 0.75rem;
+    /* 12px */
+    --spacing-orb-40: 1rem;
+    /* 16px */
+    --spacing-orb-50: 1.25rem;
+    /* 20px */
+    --spacing-orb-60: 1.5rem;
+    /* 24px */
+    --spacing-orb-80: 2rem;
+    /* 32px */
+    --spacing-orb-100: 2.5rem;
+    /* 40px */
+    --spacing-orb-120: 3rem;
+    /* 48px */
+    --spacing-orb-160: 4rem;
+    /* 64px */
+    --spacing-orb-200: 5rem;
+    /* 80px */
+}
+
+/* --- Base Styles --- */
+html {
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
