@@ -4,6 +4,8 @@ description: GitHub Pull Requestを作成する手順
 
 # PR 作成ワークフロー
 
+// turbo-all
+
 このワークフローは `/pr` コマンドで呼び出されます。
 
 ## 🚨 重要なルール
