@@ -1,0 +1,109 @@
+/**
+ * @what ボタンコンポーネントのスタイル定義
+ * @why デザイントークンとMixinを使用して一貫したスタイルを保証
+ */
+
+@use 'mixins/common' as mixins;
+@use 'mixins/component-base' as base;
+
+:host {
+	@include base.host-inline;
+}
+
+.orb-button {
+	/* Layout */
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--orb-button-gap);
+	border: none;
+	cursor: pointer;
+
+	/* Typography - font-familyはbodyから継承 */
+	@include mixins.text-button;
+
+	/* Border */
+	border-radius: var(--orb-button-radius);
+
+	/* Transitions */
+	transition: all var(--orb-button-interaction-duration) var(--orb-button-interaction-easing);
+
+	/* Common behaviors */
+	@include mixins.focus-ring;
+	@include mixins.interactive-scale;
+	@include mixins.disabled-state;
+
+	/* === Size variants === */
+	&--sm {
+		padding: var(--orb-button-padding-y-sm) var(--orb-button-padding-x-sm);
+		font-size: var(--orb-button-font-size-sm);
+		min-height: 32px;
+	}
+
+	&--md {
+		padding: var(--orb-button-padding-y-md) var(--orb-button-padding-x-md);
+		font-size: var(--orb-button-font-size-md);
+		min-height: 40px;
+	}
+
+	&--lg {
+		padding: var(--orb-button-padding-y-lg) var(--orb-button-padding-x-lg);
+		font-size: var(--orb-button-font-size-lg);
+		min-height: 48px;
+	}
+
+	/* === Color variants === */
+	&--primary {
+		background-color: var(--orb-button-primary-bg-default);
+		color: var(--orb-button-primary-text-default);
+
+		&:hover:not(:disabled) {
+			background-color: var(--orb-button-primary-bg-hover);
+		}
+
+		&:active:not(:disabled) {
+			background-color: var(--orb-button-primary-bg-pressed);
+		}
+	}
+
+	&--secondary {
+		background-color: var(--orb-button-secondary-bg-default);
+		color: var(--orb-button-secondary-text-default);
+		border: 1px solid var(--orb-button-secondary-border-default);
+
+		&:hover:not(:disabled) {
+			background-color: var(--orb-button-secondary-bg-hover);
+			border-color: var(--orb-button-secondary-border-hover);
+		}
+
+		&:active:not(:disabled) {
+			background-color: var(--orb-button-secondary-bg-pressed);
+		}
+	}
+
+	&--danger {
+		background-color: var(--orb-button-danger-bg-default);
+		color: var(--orb-button-danger-text-default);
+
+		&:hover:not(:disabled) {
+			background-color: var(--orb-button-danger-bg-hover);
+		}
+
+		&:active:not(:disabled) {
+			background-color: var(--orb-button-danger-bg-pressed);
+		}
+	}
+
+	&--ghost {
+		background-color: var(--orb-button-ghost-bg-default);
+		color: var(--orb-button-ghost-text-default);
+
+		&:hover:not(:disabled) {
+			background-color: var(--orb-button-ghost-bg-hover);
+		}
+
+		&:active:not(:disabled) {
+			background-color: var(--orb-button-ghost-bg-pressed);
+		}
+	}
+}

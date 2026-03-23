@@ -1,0 +1,131 @@
+/**
+ * @what orb-text component styles
+ * @why 一貫したタイポグラフィを本文・ラベル・補助テキストに適用
+ *
+ * Tier 3 準拠: すべてのトークンは text.* を参照。
+ *
+ * @tokens Tier 3: text.json
+ */
+
+@use 'mixins/component-base' as base;
+
+:host {
+	@include base.host-inline-text; // span/label はインライン、p/div ではブロック
+}
+
+.orb-text {
+	// Reset
+	margin: 0;
+	padding: 0;
+
+	// Variant: body - Tier 3 text.font tokens
+	&--body-lg {
+		font-family: var(--orb-text-font-lg-font-family);
+		font-size: var(--orb-text-font-lg-font-size);
+		font-weight: var(--orb-text-font-lg-font-weight);
+		line-height: var(--orb-text-font-lg-line-height);
+	}
+
+	&--body-md {
+		font-family: var(--orb-text-font-md-font-family);
+		font-size: var(--orb-text-font-md-font-size);
+		font-weight: var(--orb-text-font-md-font-weight);
+		line-height: var(--orb-text-font-md-line-height);
+	}
+
+	&--body-sm {
+		font-family: var(--orb-text-font-sm-font-family);
+		font-size: var(--orb-text-font-sm-font-size);
+		font-weight: var(--orb-text-font-sm-font-weight);
+		line-height: var(--orb-text-font-sm-line-height);
+	}
+
+	// Variant: label - Tier 3 text.label tokens
+	&--label-md {
+		font-family: var(--orb-text-label-md-font-family);
+		font-size: var(--orb-text-label-md-font-size);
+		font-weight: var(--orb-text-label-md-font-weight);
+		line-height: var(--orb-text-label-md-line-height);
+	}
+
+	&--label-sm {
+		font-family: var(--orb-text-label-sm-font-family);
+		font-size: var(--orb-text-label-sm-font-size);
+		font-weight: var(--orb-text-label-sm-font-weight);
+		line-height: var(--orb-text-label-sm-line-height);
+	}
+
+	&--label-xs {
+		font-family: var(--orb-text-label-xs-font-family);
+		font-size: var(--orb-text-label-xs-font-size);
+		font-weight: var(--orb-text-label-xs-font-weight);
+		line-height: var(--orb-text-label-xs-line-height);
+	}
+
+	// Color (Tier 3 text tokens)
+	&--color-primary {
+		color: var(--orb-text-color-primary);
+	}
+
+	&--color-secondary {
+		color: var(--orb-text-color-secondary);
+	}
+
+	&--color-disabled {
+		color: var(--orb-text-color-disabled);
+	}
+
+	&--color-inverse {
+		color: var(--orb-text-color-inverse);
+	}
+
+	&--color-danger {
+		color: var(--orb-text-color-danger);
+	}
+
+	// Weight overrides
+	&--weight-normal {
+		font-weight: var(--orb-text-weight-normal);
+	}
+
+	&--weight-medium {
+		font-weight: var(--orb-text-weight-medium);
+	}
+
+	&--weight-bold {
+		font-weight: var(--orb-text-weight-bold);
+	}
+
+	&--weight-black {
+		// TODO: Add --orb-font-weight-extrabold (800) or --orb-font-weight-black (900) token
+		font-weight: var(--orb-text-weight-bold); // Fallback to bold
+	}
+
+	// Transform
+	&--transform-uppercase {
+		text-transform: uppercase;
+		letter-spacing: 0.05em;
+	}
+
+	&--transform-lowercase {
+		text-transform: lowercase;
+	}
+
+	&--transform-capitalize {
+		text-transform: capitalize;
+	}
+
+	// Italic
+	&--italic {
+		font-style: italic;
+	}
+
+	// Align
+	&--align-center {
+		text-align: center;
+	}
+
+	&--align-end {
+		text-align: end;
+	}
+}

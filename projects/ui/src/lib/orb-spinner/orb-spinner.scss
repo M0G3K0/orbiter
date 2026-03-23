@@ -1,0 +1,57 @@
+/**
+ * @what Spinner component styles
+ * @why Provide visual loading feedback using Design Tokens
+ *
+ * @tokens Tier 3: spinner.json
+ */
+
+.orb-spinner {
+	display: inline-block;
+
+	&__circle {
+		border-radius: 50%;
+		animation: orb-spinner-rotate var(--orb-spinner-animation-duration) linear infinite;
+		border-style: solid;
+
+		// ドーナツ状スピナー: トラック（薄い色）+ 回転部分（濃い色）
+		border-color: var(--orb-spinner-color-track);
+	}
+
+	// Size variants
+	&--sm &__circle {
+		width: var(--orb-spinner-size-sm);
+		height: var(--orb-spinner-size-sm);
+		border-width: var(--orb-spinner-border-width-sm);
+	}
+
+	&--md &__circle {
+		width: var(--orb-spinner-size-md);
+		height: var(--orb-spinner-size-md);
+		border-width: var(--orb-spinner-border-width-md);
+	}
+
+	&--lg &__circle {
+		width: var(--orb-spinner-size-lg);
+		height: var(--orb-spinner-size-lg);
+		border-width: var(--orb-spinner-border-width-lg);
+	}
+
+	// Color variants
+	&--primary &__circle {
+		border-top-color: var(--orb-spinner-color-primary);
+	}
+
+	&--secondary &__circle {
+		border-top-color: var(--orb-spinner-color-secondary);
+	}
+}
+
+@keyframes orb-spinner-rotate {
+	0% {
+		transform: rotate(0deg);
+	}
+
+	100% {
+		transform: rotate(360deg);
+	}
+}
