@@ -1,5 +1,5 @@
 {
-  "name": "orbiter",
+  "name": "@m0g3k0/ui",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -10,7 +10,18 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "main": "dist/ui/fesm2022/m0g3k0-ui.mjs",
+  "module": "dist/ui/fesm2022/m0g3k0-ui.mjs",
+  "typings": "dist/ui/types/m0g3k0-ui.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/ui/fesm2022/m0g3k0-ui.mjs",
+      "types": "./dist/ui/types/m0g3k0-ui.d.ts"
+    },
+    "./styles/tokens.css": "./dist/styles/tokens.css",
+    "./styles/_tokens.scss": "./dist/styles/_tokens.scss"
+  },
+  "sideEffects": false,
   "packageManager": "npm@11.6.2",
   "dependencies": {
     "@angular/cdk": "^21.2.0",
