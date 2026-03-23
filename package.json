@@ -5,6 +5,8 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
+    "build:lib": "ng build ui",
+    "tokens:build": "node style-dictionary.config.mjs",
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
@@ -35,6 +37,7 @@
     "jsdom": "^28.0.0",
     "ng-packagr": "^21.2.0",
     "prettier": "^3.8.1",
+    "style-dictionary": "^5.4.0",
     "typescript": "~5.9.2",
     "vitest": "^4.0.8"
   }
