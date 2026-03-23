@@ -1,32 +1,32 @@
 ## 💡 概要
-`npm install github:M0G3K0/orbiter#main` でインストールしたとき `@m0g3k0/ui` として使えるように、root `package.json` のエントリポイントを設定する。
+Pokemon PJ にあった CI 検証スクリプトを orbiter に移行し、npm scripts を追加。
 
 ## 📝 変更内容
-- `package.json`
-  - `name`: `orbiter` → `@m0g3k0/ui`
-  - `private: true` を削除
-  - `main`, `module`, `typings`, `exports`, `sideEffects` を追加（`dist/ui` を向く）
+- `scripts/ci/` に Issue/PR 検証スクリプトを追加（Pokemon PJ から移行）
+  - `validate-issue-local.js`, `validate-issue-content.js`
+  - `validate-pr-local.js`, `validate-pr-content.js`
+  - `check-issue-warnings.js`
+- `package.json` に `pr:validate`, `issue:validate` npm scripts を追加
 
 ## 🔗 関連Issue
-なし
+Refs #7
 
 ## 📷 スクリーンショット（該当する場合）
-UI変更なし
+なし（スクリプト追加のみ）
 
 ## ✅ チェックリスト
-- [x] コミットメッセージが規約に従っている（`chore:`）
-- [x] ブランチ名が規約に従っている（`chore/`）
+- [x] ビルドが成功する（`npm run build`）
+- [x] Lintエラーがない（`npm run lint`）
+- [x] テストが通る（`npm run test`）
+- [x] コミットメッセージが規約に従っている（`feat:`, `fix:`, `chore:`など）
+- [x] ブランチ名が規約に従っている（`feature/`, `fix/`, `chore/`など）
 - [x] 必要に応じてドキュメントを更新した
 
 ## 📌 補足事項
-この変更後、消費側では:
-```bash
-npm install github:M0G3K0/orbiter#main
-import { OrbChipComponent } from '@m0g3k0/ui';
-```
-が正しく動く。
+- 検証スクリプトは `guards/process/rules/` のルールファイルを参照する（既に存在）
+- Pokemon PJ 固有のスクリプト（`scripts/data/`, `scripts/tokens/`）は移行対象外
 
----
+--- 
 
 ## 📝 PRタイトルの命名規則:
 - `type: description` の形式にすること（Conventional Commits）

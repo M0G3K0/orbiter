@@ -10,7 +10,9 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "pr:validate": "node scripts/ci/validate-pr-local.js",
-    "issue:validate": "node scripts/ci/validate-issue-local.js"
+    "issue:validate": "node scripts/ci/validate-issue-local.js",
+    "docs:serve": "ng serve docs",
+    "docs:build": "ng build docs"
   },
   "main": "dist/ui/fesm2022/m0g3k0-ui.mjs",
   "module": "dist/ui/fesm2022/m0g3k0-ui.mjs",
@@ -46,6 +48,10 @@
     "@angular/compiler-cli": "~21.1.0",
     "@commitlint/cli": "^20.5.0",
     "@commitlint/config-conventional": "^20.5.0",
+    "@ng-doc/app": "^21.0.0",
+    "@ng-doc/builder": "^21.0.0",
+    "@ng-doc/core": "^21.0.0",
+    "@ng-doc/ui-kit": "^21.0.0",
     "@spartan-ng/cli": "^0.0.1-alpha.644",
     "jsdom": "^28.0.0",
     "ng-packagr": "~21.1.0",
