@@ -8,7 +8,9 @@
     "build:lib": "ng build ui",
     "tokens:build": "node style-dictionary.config.mjs",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "pr:validate": "node scripts/ci/validate-pr-local.js",
+    "issue:validate": "node scripts/ci/validate-issue-local.js"
   },
   "main": "dist/ui/fesm2022/m0g3k0-ui.mjs",
   "module": "dist/ui/fesm2022/m0g3k0-ui.mjs",
