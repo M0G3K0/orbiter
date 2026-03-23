@@ -710,4 +710,4 @@ declare class TextComponent {
 }
 
 export { AvatarComponent, ButtonComponent, CHIP_ROUNDED, CHIP_SIZES, CardComponent, CardContentComponent, CardFooterComponent, CardHeaderComponent, ChipComponent, GridComponent, HeadingComponent, ICON_SIZES, IconComponent, PtRadioButtonComponent, PtRadioGroupComponent, SpinnerComponent, StackComponent, SurfaceComponent, TextComponent };
-export type { ChipRounded, ChipSize, IconColor, IconSize, RadioButtonFeedbackState, RadioGroupGap, RadioGroupLayout };
+export type { AvatarShape, AvatarSize, ChipRounded, ChipSize, HeadingLevel, HeadingSize, IconColor, IconSize, RadioButtonFeedbackState, RadioGroupGap, RadioGroupLayout, TextAlign, TextColor, TextElement, TextTransform, TextVariant, TextWeight };
