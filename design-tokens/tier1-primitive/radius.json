@@ -1,0 +1,38 @@
+{
+    "$description": "Orbiter Design System - Tier 1 Primitive Radius Tokens",
+    "radius": {
+        "none": {
+            "$value": "0",
+            "$type": "dimension"
+        },
+        "sm": {
+            "$value": "0.25rem",
+            "$type": "dimension",
+            "$description": "4px"
+        },
+        "md": {
+            "$value": "0.375rem",
+            "$type": "dimension",
+            "$description": "6px"
+        },
+        "lg": {
+            "$value": "0.5rem",
+            "$type": "dimension",
+            "$description": "8px"
+        },
+        "xl": {
+            "$value": "0.75rem",
+            "$type": "dimension",
+            "$description": "12px"
+        },
+        "2xl": {
+            "$value": "1rem",
+            "$type": "dimension",
+            "$description": "16px"
+        },
+        "full": {
+            "$value": "9999px",
+            "$type": "dimension"
+        }
+    }
+}

@@ -1,0 +1,75 @@
+{
+    "$description": "Orbiter Design System - Tier 1 Primitive Typography Tokens",
+    "font": {
+        "family": {
+            "sans": {
+                "$value": "'Inter', 'Geist Sans', system-ui, -apple-system, sans-serif",
+                "$type": "fontFamily"
+            },
+            "mono": {
+                "$value": "'JetBrains Mono', 'Fira Code', monospace",
+                "$type": "fontFamily"
+            }
+        },
+        "size": {
+            "xs": {
+                "$value": "0.75rem",
+                "$type": "dimension",
+                "$description": "12px"
+            },
+            "sm": {
+                "$value": "0.875rem",
+                "$type": "dimension",
+                "$description": "14px"
+            },
+            "base": {
+                "$value": "1rem",
+                "$type": "dimension",
+                "$description": "16px"
+            },
+            "lg": {
+                "$value": "1.125rem",
+                "$type": "dimension",
+                "$description": "18px"
+            },
+            "xl": {
+                "$value": "1.25rem",
+                "$type": "dimension",
+                "$description": "20px"
+            },
+            "2xl": {
+                "$value": "1.5rem",
+                "$type": "dimension",
+                "$description": "24px"
+            },
+            "3xl": {
+                "$value": "1.875rem",
+                "$type": "dimension",
+                "$description": "30px"
+            },
+            "4xl": {
+                "$value": "2.25rem",
+                "$type": "dimension",
+                "$description": "36px"
+            }
+        },
+        "weight": {
+            "normal": {
+                "$value": "400",
+                "$type": "fontWeight"
+            },
+            "medium": {
+                "$value": "500",
+                "$type": "fontWeight"
+            },
+            "semibold": {
+                "$value": "600",
+                "$type": "fontWeight"
+            },
+            "bold": {
+                "$value": "700",
+                "$type": "fontWeight"
+            }
+        }
+    }
+}

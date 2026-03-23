@@ -1,0 +1,75 @@
+{
+    "$description": "Orbiter Design System - Tier 1 Primitive Space Tokens (10x Scale)",
+    "space": {
+        "00": {
+            "$value": "0",
+            "$type": "dimension",
+            "$description": "0px。余白なし。"
+        },
+        "05": {
+            "$value": "0.125rem",
+            "$type": "dimension",
+            "$description": "2px。最小余白。アイコンとテキストの微調整等。"
+        },
+        "10": {
+            "$value": "0.25rem",
+            "$type": "dimension",
+            "$description": "4px。密な余白。インラインアイテム間。"
+        },
+        "15": {
+            "$value": "0.375rem",
+            "$type": "dimension",
+            "$description": "6px。中間余白。"
+        },
+        "20": {
+            "$value": "0.5rem",
+            "$type": "dimension",
+            "$description": "8px。標準的な小余白。フォーム要素内。"
+        },
+        "30": {
+            "$value": "0.75rem",
+            "$type": "dimension",
+            "$description": "12px。要素間の標準余白。"
+        },
+        "40": {
+            "$value": "1rem",
+            "$type": "dimension",
+            "$description": "16px。セクション内余白。カード内パディング。"
+        },
+        "50": {
+            "$value": "1.25rem",
+            "$type": "dimension",
+            "$description": "20px。"
+        },
+        "60": {
+            "$value": "1.5rem",
+            "$type": "dimension",
+            "$description": "24px。セクション間余白。"
+        },
+        "80": {
+            "$value": "2rem",
+            "$type": "dimension",
+            "$description": "32px。大きなセクション間余白。ページ余白。"
+        },
+        "100": {
+            "$value": "2.5rem",
+            "$type": "dimension",
+            "$description": "40px。"
+        },
+        "120": {
+            "$value": "3rem",
+            "$type": "dimension",
+            "$description": "48px。大きな区切り。"
+        },
+        "160": {
+            "$value": "4rem",
+            "$type": "dimension",
+            "$description": "64px。ページレベルの大余白。"
+        },
+        "200": {
+            "$value": "5rem",
+            "$type": "dimension",
+            "$description": "80px。最大余白。ヒーローセクション等。"
+        }
+    }
+}
