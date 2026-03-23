@@ -1,0 +1,23 @@
+{
+  "name": "@m0g3k0/ui",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^21.2.0",
+    "@angular/core": "^21.2.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "sideEffects": false,
+  "module": "fesm2022/m0g3k0-ui.mjs",
+  "typings": "types/m0g3k0-ui.d.ts",
+  "exports": {
+    "./package.json": {
+      "default": "./package.json"
+    },
+    ".": {
+      "types": "./types/m0g3k0-ui.d.ts",
+      "default": "./fesm2022/m0g3k0-ui.mjs"
+    }
+  }
+}
