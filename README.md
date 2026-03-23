@@ -1,59 +1,73 @@
-# Orbiter
+# @m0g3k0/ui — Orbiter Design System
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.2.0.
+Angular コンポーネントライブラリとデザイントークン。
 
-## Development server
-
-To start a local development server, run:
+## インストール
 
 ```bash
-ng serve
+npm install github:M0G3K0/orbiter#main
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+## 使い方
 
-## Code scaffolding
+### 1. CSS変数をインポート（グローバルスタイルに追加）
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+```scss
+// styles.scss または angular.json の styles に追加
+@import 'node_modules/@m0g3k0/ui/dist/styles/tokens.css';
+// または SCSS
+@use 'node_modules/@m0g3k0/ui/dist/styles/tokens';
+```
+
+### 2. コンポーネントをインポート
+
+```typescript
+import { OrbChipComponent } from '@m0g3k0/ui';
+
+@Component({
+  imports: [OrbChipComponent],
+  template: `<orb-chip size="md">ラベル</orb-chip>`
+})
+```
+
+## 提供コンポーネント
+
+| コンポーネント | セレクタ | 用途 |
+|--------------|---------|------|
+| AvatarComponent | `orb-avatar` | アバター画像 |
+| ButtonComponent | `orb-button` | ボタン |
+| CardComponent | `orb-card` | カード |
+| ChipComponent | `orb-chip` | チップ（タグ） |
+| GridComponent | `orb-grid` | グリッドレイアウト |
+| HeadingComponent | `orb-heading` | 見出し |
+| IconComponent | `orb-icon` | アイコン |
+| RadioButtonComponent | `orb-radio-button` | ラジオボタン |
+| SpinnerComponent | `orb-spinner` | ローディングスピナー |
+| StackComponent | `orb-stack` | スタックレイアウト |
+| SurfaceComponent | `orb-surface` | サーフェスコンテナ |
+| TextComponent | `orb-text` | テキスト |
+
+## デザイントークン
+
+3層のトークン構造：
+
+```
+design-tokens/
+├── tier1-primitive/   # 原始値（色、スペース等）
+├── tier2-semantic/    # 意味付けされたトークン
+└── tier3-component/   # コンポーネント固有トークン
+```
+
+CSS変数は `--orb-*` プレフィックス。
+
+## 開発
 
 ```bash
-ng generate component component-name
+npm run build:lib      # ライブラリビルド (dist/ui/)
+npm run tokens:build   # トークンビルド (dist/styles/)
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+## ポケモン固有トークン（SDK）
 
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+`design-tokens/tier1-primitive/colors-pokemon.json` にポケモン18タイプのカラーが含まれています。
+消費側でこれを利用してポケモン固有コンポーネントを作ることができます。

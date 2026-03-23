@@ -1,0 +1,63 @@
+/**
+ * @what Chip component styles
+ * @why Provide flexible compact information display using Design Tokens
+ * @color-injection 色は --orb-chip-bg / --orb-chip-text で外部（ラッパー）から注入される
+ *
+ * @tokens Tier 3: chip.json
+ */
+
+@use 'mixins/component-base' as base;
+
+:host {
+	@include base.host-inline;
+}
+
+.orb-chip {
+	display: inline-flex;
+	align-items: center;
+	gap: var(--orb-chip-gap);
+	font-weight: var(--orb-chip-font-weight);
+	white-space: nowrap;
+
+	// 色はCSS変数で外部から注入される
+	background-color: var(--orb-chip-bg);
+	color: var(--orb-chip-text);
+
+	// Size variants - padding均等で iconOnly時に正方形
+	&--sm {
+		padding: var(--orb-chip-padding-x-sm);
+		font-size: var(--orb-chip-font-size-sm);
+	}
+
+	&--md {
+		padding: var(--orb-chip-padding-x-md);
+		font-size: var(--orb-chip-font-size-md);
+	}
+
+	// Rounded variants
+	&--rounded-none {
+		border-radius: var(--orb-chip-radius-none);
+	}
+
+	&--rounded-sm {
+		border-radius: var(--orb-chip-radius-sm);
+	}
+
+	&--rounded-md {
+		border-radius: var(--orb-chip-radius-md);
+	}
+
+	&--rounded-full {
+		border-radius: var(--orb-chip-radius-full);
+	}
+
+	// Text content
+	&__text {
+		line-height: normal;
+
+		// Only show text if ng-content exists
+		&:empty {
+			display: none;
+		}
+	}
+}

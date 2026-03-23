@@ -1,0 +1,76 @@
+/**
+ * @what Surface component styles - Container styling primitive
+ * @why Provide consistent container appearance via Design Tokens
+ */
+
+.orb-surface {
+	display: block;
+
+	// Variant: default (white background)
+	&--default {
+		background-color: var(--orb-surface-variant-default-background);
+	}
+
+	// Variant: subtle (light gray)
+	&--subtle {
+		background-color: var(--orb-surface-variant-subtle-background);
+	}
+
+	// Variant: card (white with shadow)
+	&--card {
+		background-color: var(--orb-surface-variant-card-background);
+		box-shadow: var(--orb-surface-variant-card-elevation);
+	}
+
+	// Variant: ghost (transparent)
+	&--ghost {
+		background-color: transparent;
+	}
+
+	// Padding variants
+	&--padding-none {
+		padding: var(--orb-surface-padding-none);
+	}
+
+	&--padding-sm {
+		padding: var(--orb-surface-padding-sm);
+	}
+
+	&--padding-md {
+		padding: var(--orb-surface-padding-md);
+	}
+
+	&--padding-lg {
+		padding: var(--orb-surface-padding-lg);
+	}
+
+	// Radius variants
+	&--radius-none {
+		border-radius: var(--orb-surface-radius-none);
+	}
+
+	&--radius-sm {
+		border-radius: var(--orb-surface-radius-sm);
+	}
+
+	&--radius-md {
+		border-radius: var(--orb-surface-radius-md);
+	}
+
+	&--radius-lg {
+		border-radius: var(--orb-surface-radius-lg);
+	}
+
+	&--radius-xl {
+		border-radius: var(--orb-surface-radius-xl);
+	}
+
+	&--radius-full {
+		border-radius: var(--orb-surface-radius-full);
+	}
+
+	// Border
+	&--border {
+		border: var(--orb-surface-border-width) solid var(--orb-surface-border-color);
+	}
+}

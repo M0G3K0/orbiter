@@ -1,0 +1,54 @@
+/**
+ * @what Icon component styles
+ * @why Provide flexible icon display with color support using Design Tokens
+ *
+ * @tokens Tier 3: icon.json
+ */
+
+@use 'mixins/component-base' as base;
+
+:host {
+	@include base.host-image;
+}
+
+.orb-icon {
+	display: block;
+	object-fit: contain;
+
+	// CSS mask styles (for color mode)
+	mask-size: contain;
+	mask-repeat: no-repeat;
+	mask-position: center;
+	// stylelint-disable-next-line property-no-vendor-prefix -- Safari requires -webkit prefix for mask properties
+	-webkit-mask-size: contain;
+	// stylelint-disable-next-line property-no-vendor-prefix
+	-webkit-mask-repeat: no-repeat;
+	// stylelint-disable-next-line property-no-vendor-prefix
+	-webkit-mask-position: center;
+
+	// Size variants
+	&--xs {
+		width: var(--orb-icon-size-xs);
+		height: var(--orb-icon-size-xs);
+	}
+
+	&--sm {
+		width: var(--orb-icon-size-sm);
+		height: var(--orb-icon-size-sm);
+	}
+
+	&--md {
+		width: var(--orb-icon-size-md);
+		height: var(--orb-icon-size-md);
+	}
+
+	&--lg {
+		width: var(--orb-icon-size-lg);
+		height: var(--orb-icon-size-lg);
+	}
+
+	&--xl {
+		width: var(--orb-icon-size-xl);
+		height: var(--orb-icon-size-xl);
+	}
+}

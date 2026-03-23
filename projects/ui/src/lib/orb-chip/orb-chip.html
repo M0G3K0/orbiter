@@ -1,0 +1,11 @@
+<div [ngClass]="containerClasses">
+	<!-- Leading Icon -->
+	@if (icon) {
+	<orb-icon [src]="icon" [size]="computedIconSize"></orb-icon>
+	}
+
+	<!-- Text Content -->
+	<span class="orb-chip__text">
+		<ng-content></ng-content>
+	</span>
+</div>
