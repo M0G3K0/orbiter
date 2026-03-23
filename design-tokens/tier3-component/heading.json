@@ -1,0 +1,115 @@
+{
+	"$description": "Tier 3: Heading Component Tokens. pt-heading コンポーネント専用トークン。",
+	"heading": {
+		"$description": "Heading typography コンポーネント。セマンティックな見出し要素を出力し、セクションの階層を定義する。",
+		"text": {
+			"color": {
+				"value": "{color.text.primary}",
+				"type": "color",
+				"$description": "見出しテキストの色"
+			}
+		},
+		"font": {
+			"$description": "タイポグラフィ。Tier2 typography.heading.* へのエイリアス。",
+			"xl": {
+				"fontFamily": {
+					"value": "{typography.heading.xl.fontFamily}",
+					"type": "fontFamily"
+				},
+				"fontSize": {
+					"value": "{typography.heading.xl.fontSize}",
+					"type": "fontSize"
+				},
+				"fontWeight": {
+					"value": "{typography.heading.xl.fontWeight}",
+					"type": "fontWeight"
+				},
+				"lineHeight": {
+					"value": "{typography.heading.xl.lineHeight}",
+					"type": "lineHeight"
+				}
+			},
+			"lg": {
+				"fontFamily": {
+					"value": "{typography.heading.lg.fontFamily}",
+					"type": "fontFamily"
+				},
+				"fontSize": {
+					"value": "{typography.heading.lg.fontSize}",
+					"type": "fontSize"
+				},
+				"fontWeight": {
+					"value": "{typography.heading.lg.fontWeight}",
+					"type": "fontWeight"
+				},
+				"lineHeight": {
+					"value": "{typography.heading.lg.lineHeight}",
+					"type": "lineHeight"
+				}
+			},
+			"md": {
+				"fontFamily": {
+					"value": "{typography.heading.md.fontFamily}",
+					"type": "fontFamily"
+				},
+				"fontSize": {
+					"value": "{typography.heading.md.fontSize}",
+					"type": "fontSize"
+				},
+				"fontWeight": {
+					"value": "{typography.heading.md.fontWeight}",
+					"type": "fontWeight"
+				},
+				"lineHeight": {
+					"value": "{typography.heading.md.lineHeight}",
+					"type": "lineHeight"
+				}
+			},
+			"sm": {
+				"fontFamily": {
+					"value": "{typography.heading.sm.fontFamily}",
+					"type": "fontFamily"
+				},
+				"fontSize": {
+					"value": "{typography.heading.sm.fontSize}",
+					"type": "fontSize"
+				},
+				"fontWeight": {
+					"value": "{typography.heading.sm.fontWeight}",
+					"type": "fontWeight"
+				},
+				"lineHeight": {
+					"value": "{typography.heading.sm.lineHeight}",
+					"type": "lineHeight"
+				}
+			}
+		},
+		"accent": {
+			"width": {
+				"value": "6px",
+				"type": "sizing",
+				"$description": "アクセントバーの幅。視覚的なアクセントとしては十分かつ控えめなサイズ。"
+			},
+			"height": {
+				"value": "{space.60}",
+				"type": "sizing",
+				"$description": "アクセントバーの高さ。テキストの行高さに合わせた値。"
+			},
+			"radius": {
+				"value": "{radius.full}",
+				"type": "borderRadius",
+				"$description": "アクセントバーの角丸。pill形状にする。"
+			},
+			"gap": {
+				"value": "{space.20}",
+				"type": "spacing",
+				"$description": "アクセントバーとテキスト間のギャップ。"
+			},
+			"color": {
+				"value": "{color.text.primary}",
+				"type": "color",
+				"$description": "アクセントバーの色。primaryテキストと同じ色でブランド統一感を出す。"
+			}
+		}
+	}
+}
