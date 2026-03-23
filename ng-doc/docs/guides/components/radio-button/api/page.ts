@@ -23,7 +23,7 @@ const pageContent: string = `<h2 id="playground" href="components/radio-button/a
 <span class="line"><span style="color:#24292E;--shiki-dark:#BFBDB6" class="ngde">\}</span></span></code></pre><hr class="ngde"><h2 id="related" href="components/radio-button/api" headinglink="true" class="ngde">Related<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-grid</code>: 選択肢のグリッドレイアウトに使用</li><li class="ngde"><code class="ngde">pt-text</code>: 選択肢内のテキスト表示に使用</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-d5ib4hhi',
+  selector: 'ng-doc-page-53g72ume',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

@@ -7,7 +7,7 @@ import {NgDocPageType} from '@ng-doc/core';
 const headerContent: string = `<h1 class="ngde ngde" id="icon" href="components/icon" headinglink="true">Icon<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="icon"></ng-doc-heading-anchor></h1>`
 
 @Component({
-  selector: 'ng-doc-page-wrapper-ewjklnwr',
+  selector: 'ng-doc-page-wrapper-nm6300ll',
   template: `<ng-doc-page-wrapper [routes]="routes" [headerContent]="headerContent" [hasBreadcrumb]="hasBreadcrumb" [pageType]="pageType"></ng-doc-page-wrapper>`,
   imports: [NgDocPageWrapperComponent],
   changeDetection: ChangeDetectionStrategy.OnPush,

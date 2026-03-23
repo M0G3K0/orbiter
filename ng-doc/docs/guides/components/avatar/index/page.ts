@@ -18,7 +18,7 @@ const pageContent: string = `<ng-doc-blockquote class="ngde"><p class="ngde">画
 <span class="line"><span style="color:#24292E;--shiki-dark:#BFBDB6" class="ngde">\}</span></span></code></pre><h3 id="本番コードでの対策" href="components/avatar" headinglink="true" class="ngde">本番コードでの対策<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="本番コードでの対策"></ng-doc-heading-anchor></h3><ul class="ngde"><li class="ngde"><code class="ngde">pt-surface</code> でラップして背景色を付与</li><li class="ngde">または透明背景でない画像（JPEGなど）を使用</li></ul><hr class="ngde"><h2 id="accessibility" href="components/avatar" headinglink="true" class="ngde">Accessibility<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="accessibility"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">alt</code>属性は<strong class="ngde">必須</strong>です（アクセシビリティのため）</li><li class="ngde">装飾的な画像には<code class="ngde">alt=""</code>を使用</li><li class="ngde"><code class="ngde">loading="lazy"</code>によるパフォーマンス最適化が適用されます</li></ul><h2 id="related-components" href="components/avatar" headinglink="true" class="ngde">Related Components<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related-components"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-icon</code>: SVGアイコン表示（Atom）</li><li class="ngde"><code class="ngde">pt-surface</code>: 背景色・シャドウなどのコンテナスタイリング</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-vfl6olfl',
+  selector: 'ng-doc-page-lio9xeiw',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

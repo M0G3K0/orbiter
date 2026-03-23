@@ -11,7 +11,7 @@ const pageContent: string = `<h2 id="playground" href="components/heading/api" h
 <span class="line"><span style="color:#D73A49;--shiki-dark:#FF8F40" class="ngde">type</span><span style="color:#6F42C1;--shiki-dark:#59C2FF" class="ngde"> HeadingSize</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> =</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'xl'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'lg'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'md'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'sm'</span><span style="color:#24292E;--shiki-dark:#BFBDB6B3" class="ngde">;</span></span></code></pre><hr class="ngde"><h2 id="related" href="components/heading/api" headinglink="true" class="ngde">Related<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-text</code>: 本文・ラベル・補助テキスト用のタイポグラフィ</li><li class="ngde"><code class="ngde">pt-card-header</code>: カード内の見出しエリア</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-j771ythm',
+  selector: 'ng-doc-page-dojyouxc',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

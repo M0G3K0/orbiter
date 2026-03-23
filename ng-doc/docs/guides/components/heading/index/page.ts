@@ -30,7 +30,7 @@ const pageContent: string = `<ng-doc-blockquote class="ngde"><p class="ngde">コ
 <span class="line"><span style="color:#24292E;--shiki-dark:#39BAE680" class="ngde">&#x3C;/</span><span style="color:#22863A;--shiki-dark:#39BAE6" class="ngde">pt-heading</span><span style="color:#24292E;--shiki-dark:#39BAE680" class="ngde">></span></span></code></pre><hr class="ngde"><h2 id="accessibility" href="components/heading" headinglink="true" class="ngde">Accessibility<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="accessibility"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde">✅ 適切な見出しレベル: h1-h6を正しく出力</li><li class="ngde">✅ 見出しの順序: h1 → h2 → h3の順番を飛ばさない</li><li class="ngde">✅ アクセントバーは<code class="ngde">aria-hidden="true"</code>でスクリーンリーダーに影響しない</li><li class="ngde">✅ 1ページ1回のh1: 画面タイトル（level=1）は1ページに1回のみ</li></ul><h2 id="related-components" href="components/heading" headinglink="true" class="ngde">Related Components<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related-components"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-text</code>: 本文・ラベル・補助テキスト用のタイポグラフィ</li><li class="ngde"><code class="ngde">pt-card-header</code>: カード内の見出しエリア</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-lf3hpg4n',
+  selector: 'ng-doc-page-1m7ggp1x',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

@@ -10,7 +10,7 @@ import demoAssets from '../demo-assets';
 const pageContent: string = `<h2 id="variants" href="components/surface/examples" headinglink="true" class="ngde">Variants<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="variants"></ng-doc-heading-anchor></h2><p class="ngde">4種類のバリエーション（default / subtle / card / ghost）：</p><ng-doc-demo componentname="SurfaceVariantsDemoComponent" indexable="false" class="ngde"><div id="options" class="ngde">\{\}</div></ng-doc-demo><h2 id="padding" href="components/surface/examples" headinglink="true" class="ngde">Padding<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="padding"></ng-doc-heading-anchor></h2><p class="ngde">4種類のパディング（none / sm / md / lg）：</p><ng-doc-demo componentname="SurfacePaddingDemoComponent" indexable="false" class="ngde"><div id="options" class="ngde">\{\}</div></ng-doc-demo><h2 id="border-radius" href="components/surface/examples" headinglink="true" class="ngde">Border Radius<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="border-radius"></ng-doc-heading-anchor></h2><p class="ngde">6種類の角丸（none / sm / md / lg / xl / full）：</p><ng-doc-demo componentname="SurfaceRadiusDemoComponent" indexable="false" class="ngde"><div id="options" class="ngde">\{\}</div></ng-doc-demo>`
 
 @Component({
-  selector: 'ng-doc-page-ls8m2btt',
+  selector: 'ng-doc-page-cnwj2bej',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

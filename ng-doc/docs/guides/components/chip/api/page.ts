@@ -11,7 +11,7 @@ const pageContent: string = `<h2 id="playground" href="components/chip/api" head
 <span class="line"><span style="color:#D73A49;--shiki-dark:#FF8F40" class="ngde">type</span><span style="color:#6F42C1;--shiki-dark:#59C2FF" class="ngde"> ChipRounded</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> =</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'none'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'sm'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'md'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'full'</span><span style="color:#24292E;--shiki-dark:#BFBDB6B3" class="ngde">;</span></span></code></pre><hr class="ngde"><h2 id="related" href="components/chip/api" headinglink="true" class="ngde">Related<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-type-chip</code>: ポケモンタイプ専用のChip（Organism）</li><li class="ngde"><code class="ngde">pt-icon</code>: Chip内アイコン表示に使用</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-7hqewdc7',
+  selector: 'ng-doc-page-phl0pi6e',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

@@ -21,7 +21,7 @@ const pageContent: string = `<ng-doc-blockquote class="ngde"><p class="ngde">ロ
 <span class="line"><span style="color:#005CC5;--shiki-dark:#39BAE6;font-style:inherit;--shiki-dark-font-style:italic" class="ngde">this</span><span style="color:#24292E;--shiki-dark:#F29668" class="ngde">.</span><span style="color:#24292E;--shiki-dark:#BFBDB6" class="ngde">isLoading </span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde">=</span><span style="color:#005CC5;--shiki-dark:#D2A6FF" class="ngde"> false</span><span style="color:#24292E;--shiki-dark:#BFBDB6B3" class="ngde">;</span></span></code></pre><hr class="ngde"><h2 id="accessibility" href="components/spinner" headinglink="true" class="ngde">Accessibility<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="accessibility"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">ariaLabel</code>でスクリーンリーダー向けの説明を設定</li><li class="ngde">アニメーションは<code class="ngde">prefers-reduced-motion</code>を尊重</li></ul><h2 id="related-components" href="components/spinner" headinglink="true" class="ngde">Related Components<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related-components"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-button</code>: ボタン内のローディング表示</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-j4ksr6nj',
+  selector: 'ng-doc-page-s39ct144',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
