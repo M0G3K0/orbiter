@@ -4,6 +4,8 @@ description: GitHub Issueを作成する手順
 
 # Issue 作成ワークフロー
 
+// turbo-all
+
 このワークフローは `/issue` コマンドで呼び出されます。
 
 ## 🚨 重要なルール
