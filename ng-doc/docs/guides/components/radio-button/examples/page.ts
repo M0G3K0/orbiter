@@ -10,7 +10,7 @@ import demoAssets from '../demo-assets';
 const pageContent: string = `<h2 id="feedback-states" href="components/radio-button/examples" headinglink="true" class="ngde">Feedback States<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="feedback-states"></ng-doc-heading-anchor></h2><p class="ngde">Quiz等でのフィードバック状態（default / correct / wrong / actual）：</p><ng-doc-demo componentname="RadioButtonFeedbackDemoComponent" indexable="false" class="ngde"><div id="options" class="ngde">\{\}</div></ng-doc-demo><h2 id="radio-group" href="components/radio-button/examples" headinglink="true" class="ngde">Radio Group<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="radio-group"></ng-doc-heading-anchor></h2><p class="ngde">pt-radio-groupを使った選択肢グループ：</p><ng-doc-demo componentname="RadioButtonGroupDemoComponent" indexable="false" class="ngde"><div id="options" class="ngde">\{\}</div></ng-doc-demo>`
 
 @Component({
-  selector: 'ng-doc-page-nvjaqtal',
+  selector: 'ng-doc-page-y2toelye',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

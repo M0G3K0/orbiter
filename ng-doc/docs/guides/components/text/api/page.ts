@@ -15,7 +15,7 @@ const pageContent: string = `<h2 id="playground" href="components/text/api" head
 <span class="line"><span style="color:#D73A49;--shiki-dark:#FF8F40" class="ngde">type</span><span style="color:#6F42C1;--shiki-dark:#59C2FF" class="ngde"> TextElement</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> =</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'span'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'p'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'div'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'label'</span><span style="color:#24292E;--shiki-dark:#BFBDB6B3" class="ngde">;</span></span></code></pre><hr class="ngde"><h2 id="related" href="components/text/api" headinglink="true" class="ngde">Related<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-heading</code>: 構造的な見出し（h1-h6）用</li><li class="ngde"><code class="ngde">pt-button</code>: ボタン内テキスト</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-8sl5e6lh',
+  selector: 'ng-doc-page-su407n38',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

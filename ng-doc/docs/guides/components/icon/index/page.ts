@@ -36,7 +36,7 @@ const pageContent: string = `<ng-doc-blockquote class="ngde"><p class="ngde">ア
 <span class="line"><span style="color:#24292E;--shiki-dark:#39BAE680" class="ngde">&#x3C;/</span><span style="color:#22863A;--shiki-dark:#39BAE6" class="ngde">button</span><span style="color:#24292E;--shiki-dark:#39BAE680" class="ngde">></span></span></code></pre><h2 id="related-components" href="components/icon" headinglink="true" class="ngde">Related Components<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related-components"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-avatar</code>: 画像の表示（プロフィール、ポケモン）</li><li class="ngde"><code class="ngde">pt-type-chip</code>: タイプアイコン+ラベルの複合コンポーネント</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-o6msk3qb',
+  selector: 'ng-doc-page-l33lk473',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

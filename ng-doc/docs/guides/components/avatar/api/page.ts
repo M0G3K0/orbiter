@@ -11,7 +11,7 @@ const pageContent: string = `<h2 id="playground" href="components/avatar/api" he
 <span class="line"><span style="color:#D73A49;--shiki-dark:#FF8F40" class="ngde">type</span><span style="color:#6F42C1;--shiki-dark:#59C2FF" class="ngde"> AvatarShape</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> =</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'circle'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'rounded'</span><span style="color:#D73A49;--shiki-dark:#F29668" class="ngde"> |</span><span style="color:#032F62;--shiki-dark:#AAD94C" class="ngde"> 'square'</span><span style="color:#24292E;--shiki-dark:#BFBDB6B3" class="ngde">;</span></span></code></pre><hr class="ngde"><h2 id="related" href="components/avatar/api" headinglink="true" class="ngde">Related<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">pt-icon</code>: SVGアイコン表示</li><li class="ngde"><code class="ngde">pt-surface</code>: 背景色・シャドウなどのコンテナスタイリング</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-h9znahr9',
+  selector: 'ng-doc-page-2c4q0hoq',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [

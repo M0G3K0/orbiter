@@ -20,7 +20,7 @@ const pageContent: string = `<h2 id="design-tokens" href="components/icon/style"
 <span class="line"><span style="color:#24292E;--shiki-dark:#BFBDB6" class="ngde">\}</span></span></code></pre><hr class="ngde"><h2 id="related-tokens" href="components/icon/style" headinglink="true" class="ngde">Related Tokens<ng-doc-heading-anchor class="ng-doc-anchor ngde" anchor="related-tokens"></ng-doc-heading-anchor></h2><ul class="ngde"><li class="ngde"><code class="ngde">design-tokens/tier3-component/icon.json</code>: コンポーネントトークン定義</li></ul>`
 
 @Component({
-  selector: 'ng-doc-page-abcyt8u9',
+  selector: 'ng-doc-page-g81vk38k',
   template: `<ng-doc-page></ng-doc-page>`,
   changeDetection: ChangeDetectionStrategy.OnPush,
   imports: [
