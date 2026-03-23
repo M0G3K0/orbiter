@@ -1,0 +1,62 @@
+/**
+ * @what pt-heading component styles
+ * @why セマンティックな見出しに一貫したタイポグラフィを適用
+ *
+ * Tier 3 準拠: すべてのトークンは heading.* を参照。
+ */
+
+@use 'mixins/component-base' as base;
+
+:host {
+	@include base.host-block;
+}
+
+.pt-heading {
+	margin: 0;
+	color: var(--pt-heading-text-color);
+
+	// Size variants - Tier 3 font tokens を使用
+	&--xl {
+		font-family: var(--pt-heading-font-xl-font-family);
+		font-size: var(--pt-heading-font-xl-font-size);
+		font-weight: var(--pt-heading-font-xl-font-weight);
+		line-height: var(--pt-heading-font-xl-line-height);
+	}
+
+	&--lg {
+		font-family: var(--pt-heading-font-lg-font-family);
+		font-size: var(--pt-heading-font-lg-font-size);
+		font-weight: var(--pt-heading-font-lg-font-weight);
+		line-height: var(--pt-heading-font-lg-line-height);
+	}
+
+	&--md {
+		font-family: var(--pt-heading-font-md-font-family);
+		font-size: var(--pt-heading-font-md-font-size);
+		font-weight: var(--pt-heading-font-md-font-weight);
+		line-height: var(--pt-heading-font-md-line-height);
+	}
+
+	&--sm {
+		font-family: var(--pt-heading-font-sm-font-family);
+		font-size: var(--pt-heading-font-sm-font-size);
+		font-weight: var(--pt-heading-font-sm-font-weight);
+		line-height: var(--pt-heading-font-sm-line-height);
+	}
+
+	// Accent variant - アクセントバー付き
+	&--accent {
+		display: flex;
+		align-items: center;
+		gap: var(--pt-heading-accent-gap);
+	}
+
+	// Accent bar element
+	&__accent {
+		flex-shrink: 0;
+		width: var(--pt-heading-accent-width);
+		height: var(--pt-heading-accent-height);
+		background-color: var(--pt-heading-accent-color);
+		border-radius: var(--pt-heading-accent-radius);
+	}
+}

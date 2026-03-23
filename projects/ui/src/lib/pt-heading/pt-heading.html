@@ -1,0 +1,46 @@
+<!-- 
+  pt-heading Template
+  
+  @switch で level に応じた h1-h6 要素を出力。
+  ng-content は複数の @case で使用できないため、
+  ng-template で共通コンテンツを定義し参照する。
+-->
+<ng-template #content>
+	@if (accent) {
+	<span class="pt-heading__accent" aria-hidden="true"></span>
+	}
+	<ng-content></ng-content>
+</ng-template>
+
+@switch (level) {
+@case (1) {
+<h1 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h1>
+}
+@case (2) {
+<h2 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h2>
+}
+@case (3) {
+<h3 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h3>
+}
+@case (4) {
+<h4 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h4>
+}
+@case (5) {
+<h5 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h5>
+}
+@case (6) {
+<h6 [ngClass]="headingClasses">
+	<ng-container *ngTemplateOutlet="content"></ng-container>
+</h6>
+}
+}
